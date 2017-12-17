@@ -1,0 +1,63 @@
+body{
+    padding-top: 20px;
+}
+#logo a{
+    text-decoration: none;
+}
+.well{
+    display: flex;
+    justify-content: space-around;
+}
+.well label{
+    width: 100px;
+}
+/* EDITOR */
+.panel{
+    padding: 0;
+    margin: 0 3px;
+    width: calc(100%/3 - 9px);
+    display: inline-block;
+}
+.panel-body{
+    padding: 10px;
+}
+.panel h3{
+    margin: 5px;
+}
+textarea {
+    resize: none;
+}
+.html, .css, .js{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 230px;
+}
+.mainWrapper .preview{
+    width: 100%;
+    height: 350px;
+    clear: both;
+    margin: 10px 0;
+}
+iframe{
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+#getCode, #exportcode{
+    margin: 10px;
+    margin-bottom: 0px;
+}
+#form-export{
+    margin: 8px;
+}
+#form-export *{
+    float: left;
+}
+#table{
+    height: 420px;
+    overflow: scroll;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px ;
+}

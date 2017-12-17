@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Double4code</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <script src="js.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="col-md-3">
+        <div id="logo"><h1><a href="#">Double4code</a></h1></div>
+    </div>
+    <div class="col-md-6">
+        <div class="well">
+            <label class="btn btn-danger"><h3 id="days"></h3> Day</label>
+            <label class="btn btn-success"><h3 id="hours"></h3> Hours</label>
+            <label class="btn btn-primary"><h3 id="mins"></h3> Minutes</label>
+            <label class="btn btn-info"><h3 id="secs"></h3> Seconds</label>
+        </div>
+    </div>
+</div>
+<br/>
+<div class="mainWrapper container-fluid">
+    <div id="box">
+        <div class="panel panel-default">
+            <div class="panel-heading ">
+                <h3><label class="label label-info">HTML</label></h3>
+            </div>
+            <div class="panel-body">
+                <textarea class="html form-control"></textarea>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading ">
+                <h3><label class="label label-info">CSS</label></h3>
+            </div>
+            <div class="panel-body">
+                <textarea class="css form-control"></textarea>
+            </div>
+        </div>
+
+        <div class="panel panel-default ">
+            <div class="panel-heading ">
+                <h3><label class="label label-info">JavaScript</label></h3>
+            </div>
+            <div class="panel-body">
+                <textarea class="js form-control"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="preview form-control">
+        <iframe id="previewTarget">
+            <html>
+            <head>
+            </head>
+            <body>
+            </body>
+            </html>
+        </iframe>
+    </div>
+
+        <div class="row" id="form-export">
+            <label class="label label-default "><span>Name File: </span></label>
+            <input type="text" class="form-control col-md-6" id="inputFileNameToSaveAs" placeholder="type..." />
+            <button class="btn btn-default " id="exportcode" >Export</button>
+            <button id="getCode" class="btn btn-danger pull-right">get code</button>
+        </div>
+    </div>
+<br/>
+</body>
+</html>
